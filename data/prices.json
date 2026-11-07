@@ -1,6 +1,91 @@
 {
-  "updatedAt": "2026-11-07T16:43:45.815009+00:00",
-  "method": "public-web-headlines",
-  "prices": {},
-  "note": "公开网页报价，仅供参考；无日期或无法确认规格的价格不自动采信。"
+  "updatedAt": "2026-11-07T17:01:32.086767+00:00",
+  "lastCheckedAt": "2026-11-07T17:01:32.086767+00:00",
+  "method": "public-multi-source-dated-headlines-v2.1",
+  "prices": {
+    "viscose": {
+      "name": "粘胶短纤",
+      "priceYuanPerKg": 14.7,
+      "date": "2026-11-06",
+      "source": "纺织网资讯",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088458.html",
+      "specification": "粘胶短纤行业报价，仅供成本估算",
+      "status": "market"
+    },
+    "nylon": {
+      "name": "锦纶POY",
+      "priceYuanPerKg": 16.025,
+      "date": "2026-11-06",
+      "source": "纺织网资讯",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088456.html",
+      "specification": "锦纶POY行业报价，仅供成本估算",
+      "status": "market"
+    },
+    "polyester": {
+      "name": "涤纶短纤",
+      "priceYuanPerKg": 8.7401,
+      "date": "2026-11-06",
+      "source": "纺织网资讯",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088460.html",
+      "specification": "涤纶短纤行业报价，仅供成本估算",
+      "status": "market"
+    },
+    "spandex": {
+      "name": "氨纶",
+      "priceYuanPerKg": 29.0,
+      "date": "2026-11-05",
+      "source": "纺织网资讯",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088333.html",
+      "specification": "氨纶行业报价，仅供成本估算",
+      "status": "market"
+    },
+    "cotton": {
+      "name": "皮棉",
+      "priceYuanPerKg": 16.889,
+      "date": "2026-11-06",
+      "source": "中国棉花信息网",
+      "sourceUrl": "https://cottonchina.org.cn/",
+      "specification": "中国棉花价格指数 CC Index 3128B；不等于任意规格棉花采购价",
+      "status": "market"
+    }
+  },
+  "diagnostics": [
+    {
+      "source": "纺织网资讯",
+      "url": "https://info.texnet.com.cn/pro--1.html",
+      "status": "ok",
+      "candidates": 2
+    },
+    {
+      "source": "纺织网资讯",
+      "url": "https://info.texnet.com.cn/pro--2.html",
+      "status": "ok",
+      "candidates": 4
+    },
+    {
+      "source": "纺织网资讯",
+      "url": "https://info.texnet.com.cn/pro--3.html",
+      "status": "no_matching_quotes",
+      "candidates": 0
+    },
+    {
+      "source": "纺织网资讯",
+      "url": "https://info.texnet.com.cn/pro--4.html",
+      "status": "ok",
+      "candidates": 10
+    },
+    {
+      "source": "全球纺织网",
+      "url": "https://www.tnc.com.cn/market/",
+      "status": "error",
+      "reason": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)>"
+    },
+    {
+      "source": "中国棉花信息网",
+      "url": "https://cottonchina.org.cn/",
+      "status": "ok",
+      "candidates": 1
+    }
+  ],
+  "note": "公开网页报价，非实时成交价。采集失败时不伪造行情；报价日期、规格和来源见各条记录。"
 }
