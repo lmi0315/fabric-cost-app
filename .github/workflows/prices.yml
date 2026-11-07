@@ -1,35 +1,60 @@
-
 name: Update public textile prices
 
 on:
   schedule:
     - cron: '17 2 * * 1-5'
   workflow_dispatch:
+  push:
+    paths:
+      - 'collector.py'
+      - '.github/workflows/prices.yml'
 
 permissions:
   contents: write
 
+concurrency:
+  group: textile-prices-main
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Collect public quotations
+      - name: Collect public quotations from multiple sources
         run: python collector.py
 
-      - name: Commit updated prices
+      - name: Check JSON data structure
+        run: |
+          python -m json.tool data/prices.json > /dev/null
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data/prices.json').read_text(encoding='utf-8'))
+          assert isinstance(data.get('prices'), dict)
+          print('Market entries:', len(data['prices']))
+          print('Sources checked:', len(data.get('diagnostics', [])))
+          for row in data.get('diagnostics', []):
+              print(row['source'], row['status'], row.get('candidates', 0), row.get('reason', ''))
+          PY
+
+      - name: Commit updated prices and diagnostics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/prices.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update public textile quotations"
+            git commit -m "Update dated textile market quotations"
+            git pull --rebase
             git push
           fi
