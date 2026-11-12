@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-11-11T03:08:16.721843+00:00",
-  "lastCheckedAt": "2026-11-11T03:08:16.721843+00:00",
+  "updatedAt": "2026-11-12T03:08:41.159117+00:00",
+  "lastCheckedAt": "2026-11-12T03:08:41.159117+00:00",
   "method": "public-multi-source-dated-headlines-v2.1",
   "prices": {
     "viscose": {
       "name": "粘胶短纤",
-      "priceYuanPerKg": 14.7,
-      "date": "2026-11-11",
+      "priceYuanPerKg": 14.78,
+      "date": "2026-11-12",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1088776.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088874.html",
       "specification": "粘胶短纤行业报价，仅供成本估算",
       "status": "market"
     },
     "nylon": {
       "name": "锦纶POY",
-      "priceYuanPerKg": 16.025,
-      "date": "2026-11-11",
+      "priceYuanPerKg": 15.25,
+      "date": "2026-11-12",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1088774.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088872.html",
       "specification": "锦纶POY行业报价，仅供成本估算",
       "status": "market"
     },
     "polyester": {
       "name": "涤纶短纤",
-      "priceYuanPerKg": 8.4863,
-      "date": "2026-11-11",
+      "priceYuanPerKg": 8.5073,
+      "date": "2026-11-12",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1088778.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088876.html",
       "specification": "涤纶短纤行业报价，仅供成本估算",
       "status": "market"
     },
     "spandex": {
       "name": "氨纶",
       "priceYuanPerKg": 29.0,
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1088766.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1088864.html",
       "specification": "氨纶行业报价，仅供成本估算",
       "status": "market"
     },
     "cotton": {
       "name": "皮棉",
-      "priceYuanPerKg": 16.91,
-      "date": "2026-11-11",
+      "priceYuanPerKg": 16.919,
+      "date": "2026-11-12",
       "source": "中国棉花信息网",
       "sourceUrl": "https://cottonchina.org.cn/",
       "specification": "中国棉花价格指数 CC Index 3128B；不等于任意规格棉花采购价",
@@ -65,8 +65,8 @@
     {
       "source": "纺织网资讯",
       "url": "https://info.texnet.com.cn/pro--3.html",
-      "status": "no_matching_quotes",
-      "candidates": 0
+      "status": "ok",
+      "candidates": 10
     },
     {
       "source": "纺织网资讯",
