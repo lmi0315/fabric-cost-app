@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-24T03:11:03.245567+00:00",
-  "lastCheckedAt": "2026-11-24T03:11:03.245567+00:00",
+  "updatedAt": "2026-11-25T03:19:38.519279+00:00",
+  "lastCheckedAt": "2026-11-25T03:19:38.519279+00:00",
   "method": "public-multi-source-dated-headlines-v2.1",
   "prices": {
     "viscose": {
@@ -42,7 +42,7 @@
     "cotton": {
       "name": "皮棉",
       "priceYuanPerKg": 16.791,
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "source": "中国棉花信息网",
       "sourceUrl": "https://cottonchina.org.cn/",
       "specification": "中国棉花价格指数 CC Index 3128B；不等于任意规格棉花采购价",
@@ -53,14 +53,14 @@
     {
       "source": "纺织网资讯",
       "url": "https://info.texnet.com.cn/pro--1.html",
-      "status": "ok",
-      "candidates": 10
+      "status": "error",
+      "reason": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "source": "纺织网资讯",
       "url": "https://info.texnet.com.cn/pro--2.html",
-      "status": "no_matching_quotes",
-      "candidates": 0
+      "status": "error",
+      "reason": "<urlopen error _ssl.c:994: The handshake operation timed out>"
     },
     {
       "source": "纺织网资讯",
@@ -71,8 +71,8 @@
     {
       "source": "纺织网资讯",
       "url": "https://info.texnet.com.cn/pro--4.html",
-      "status": "no_matching_quotes",
-      "candidates": 0
+      "status": "error",
+      "reason": "The read operation timed out"
     },
     {
       "source": "全球纺织网",
