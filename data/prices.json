@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-11-25T03:19:38.519279+00:00",
-  "lastCheckedAt": "2026-11-25T03:19:38.519279+00:00",
+  "updatedAt": "2026-11-26T03:17:14.541591+00:00",
+  "lastCheckedAt": "2026-11-26T03:17:14.541591+00:00",
   "method": "public-multi-source-dated-headlines-v2.1",
   "prices": {
     "viscose": {
       "name": "粘胶短纤",
       "priceYuanPerKg": 14.78,
-      "date": "2026-11-24",
+      "date": "2026-11-26",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1089767.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1090016.html",
       "specification": "粘胶短纤行业报价，仅供成本估算",
       "status": "market"
     },
     "nylon": {
       "name": "锦纶POY",
       "priceYuanPerKg": 14.675,
-      "date": "2026-11-24",
+      "date": "2026-11-26",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1089765.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1090014.html",
       "specification": "锦纶POY行业报价，仅供成本估算",
       "status": "market"
     },
     "polyester": {
       "name": "涤纶短纤",
-      "priceYuanPerKg": 8.3882,
-      "date": "2026-11-24",
+      "priceYuanPerKg": 8.351,
+      "date": "2026-11-26",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1089769.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1090018.html",
       "specification": "涤纶短纤行业报价，仅供成本估算",
       "status": "market"
     },
     "spandex": {
       "name": "氨纶",
       "priceYuanPerKg": 29.0,
-      "date": "2026-11-24",
+      "date": "2026-11-26",
       "source": "纺织网资讯",
-      "sourceUrl": "https://info.texnet.com.cn/detail-1089757.html",
+      "sourceUrl": "https://info.texnet.com.cn/detail-1090006.html",
       "specification": "氨纶行业报价，仅供成本估算",
       "status": "market"
     },
     "cotton": {
       "name": "皮棉",
-      "priceYuanPerKg": 16.791,
-      "date": "2026-11-25",
+      "priceYuanPerKg": 16.751,
+      "date": "2026-11-26",
       "source": "中国棉花信息网",
       "sourceUrl": "https://cottonchina.org.cn/",
       "specification": "中国棉花价格指数 CC Index 3128B；不等于任意规格棉花采购价",
@@ -53,14 +53,14 @@
     {
       "source": "纺织网资讯",
       "url": "https://info.texnet.com.cn/pro--1.html",
-      "status": "error",
-      "reason": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "ok",
+      "candidates": 10
     },
     {
       "source": "纺织网资讯",
       "url": "https://info.texnet.com.cn/pro--2.html",
-      "status": "error",
-      "reason": "<urlopen error _ssl.c:994: The handshake operation timed out>"
+      "status": "no_matching_quotes",
+      "candidates": 0
     },
     {
       "source": "纺织网资讯",
@@ -71,8 +71,8 @@
     {
       "source": "纺织网资讯",
       "url": "https://info.texnet.com.cn/pro--4.html",
-      "status": "error",
-      "reason": "The read operation timed out"
+      "status": "no_matching_quotes",
+      "candidates": 0
     },
     {
       "source": "全球纺织网",
